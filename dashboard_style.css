@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white; /* Default text color */
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.welcome-message {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+#user-name {
+    font-weight: 600;
+    color: #ffaf7b; /* Highlight user name */
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d76d77;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #ffaf7b;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 40px 30px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .welcome-message {
+        font-size: 1.5em;
+    }
+}

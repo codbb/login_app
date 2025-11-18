@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h1>Login</h1>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="feature-section">
+            <div class="additional-links">
+                <a href="signup.html">회원가입</a>
+                <span>|</span>
+                <a href="find_credentials.html">아이디/비밀번호 찾기</a>
+            </div>
+            <button id="google-login-button" class="social-login-button">
+                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Icon" class="google-icon">
+                구글 아이디로 로그인
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
